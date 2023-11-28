@@ -42,7 +42,7 @@ stack[top+1]='\0';
 int reduce() 
 { 
 int i,len,found,t; 
-for(i=0;i<5;i++)//selecting handles 
+for(i=0;i<5;i++)
  { 
  len=strlen(handles[i]); 
  if(stack[top]==handles[i][0]&&top+1>=len) 
@@ -62,7 +62,7 @@ for(i=0;i<5;i++)//selecting handles
  top=top-t+1; 
  strcpy(lasthandle,handles[i]);
  stack[top+1]='\0'; 
- return 1;//successful reduction 
+ return 1;
  } 
  } 
  } 
